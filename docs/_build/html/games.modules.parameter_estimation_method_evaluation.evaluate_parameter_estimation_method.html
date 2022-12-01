@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method module &mdash; GAMES VERSION NUMBER 2.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="games.modules.parameter_estimation_method_evaluation.generate_pem_evaluation_data module" href="games.modules.parameter_estimation_method_evaluation.generate_pem_evaluation_data.html" />
+    <link rel="prev" title="games.modules.parameter_estimation_method_evaluation package" href="games.modules.parameter_estimation_method_evaluation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> GAMES
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Package modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="games.html">games package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="games.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="games.config.html">games.config package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="games.models.html">games.models package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="games.modules.html">games.modules package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="games.plots.html">games.plots package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="games.utilities.html">games.utilities package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="games.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GAMES</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">games</a> &raquo;</li>
+          <li><a href="games.html">games package</a> &raquo;</li>
+          <li><a href="games.modules.html">games.modules package</a> &raquo;</li>
+          <li><a href="games.modules.parameter_estimation_method_evaluation.html">games.modules.parameter_estimation_method_evaluation package</a> &raquo;</li>
+      <li>games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method">
+<span id="games-modules-parameter-estimation-method-evaluation-evaluate-parameter-estimation-method-module"></span><h1>games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method module<a class="headerlink" href="#module-games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method" title="Permalink to this headline"></a></h1>
+<p>Created on Wed Jun 15 16:13:15 2022</p>
+<p>&#64;author: kate</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method.define_initial_guesses_for_pem_eval">
+<span class="sig-name descname"><span class="pre">define_initial_guesses_for_pem_eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_global_search_results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pem_evaluation_data_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_parameter_sets_optimization</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight_by_error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.DataFrame</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/games/modules/parameter_estimation_method_evaluation/evaluate_parameter_estimation_method.html#define_initial_guesses_for_pem_eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method.define_initial_guesses_for_pem_eval" title="Permalink to this definition"></a></dt>
+<dd><p>Defines initial guesses for each pem evaluation optimization run
+based on results of global search PEM evaluation data and then running
+multi-start optimization with each set of PEM evaluation data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df_global_search_results</strong> – a df containing global search results</p></li>
+<li><p><strong>pem_evaluation_data_list</strong> – a list of lists defining the pem evaluation data (length = # pem evaluation datasets)</p></li>
+<li><p><strong>num_parameter_sets_optimization</strong> – an int defining the number of parameter sets to use as initial guesses for optimization</p></li>
+<li><p><strong>weight_by_error</strong> – a string defining whether the cost function should be weighted by error or not</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of dataframes containing the initial guesses for each pem evaluation dataset
+(length = # pem evaluation datasets)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>df_initial_guesses_list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method.optimize_pem_evaluation_data">
+<span class="sig-name descname"><span class="pre">optimize_pem_evaluation_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_initial_guesses_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.DataFrame</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chi_sq_pem_evaluation_criterion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">problem</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.DataFrame</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/games/modules/parameter_estimation_method_evaluation/evaluate_parameter_estimation_method.html#optimize_pem_evaluation_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#games.modules.parameter_estimation_method_evaluation.evaluate_parameter_estimation_method.optimize_pem_evaluation_data" title="Permalink to this definition"></a></dt>
+<dd><p>Runs optimization for each set of pem evaluation data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df_initial_guesses_list</strong> – a list of dfs containing the initial guesses for each pem evaluation data set</p></li>
+<li><p><strong>chi_sq_pem_evaluation_criterion</strong> – a float defining the pem evaluation criterion for chi_sq</p></li>
+<li><p><strong>folder_path</strong> – a string defining the path to the main results folder</p></li>
+<li><p><strong>settings</strong> – a dictionary of run settings</p></li>
+<li><p><strong>problem</strong> – a dictionary containing the parameter estimation problem -
+must be provided for PPL simulations only, in which the free parameters
+change depending on which parameter’s PPL is being calculated</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of dataframes defining the optimization results (length = #PEM evaluation data sets)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>df_list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="games.modules.parameter_estimation_method_evaluation.html" class="btn btn-neutral float-left" title="games.modules.parameter_estimation_method_evaluation package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="games.modules.parameter_estimation_method_evaluation.generate_pem_evaluation_data.html" class="btn btn-neutral float-right" title="games.modules.parameter_estimation_method_evaluation.generate_pem_evaluation_data module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Dray_Kate.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
