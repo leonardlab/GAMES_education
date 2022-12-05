@@ -125,7 +125,7 @@ class synTF:
         elif mechanismID == 'nonlinear':
             [b, w] = parameters
             m = 1
-            fractional_activation_promoter = b + m * w * y[1] / (1 + w * y[1]) #insert code to calculate f here
+            #insert code to calculate f here
 
         dydt = np.array(
             [
