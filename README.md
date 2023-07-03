@@ -1,6 +1,6 @@
-This code is a starting point for the homework set defined in the following article. Note that this code is missing some informaton aand will not run without following the directions in the homework set.
+This code is a starting point for the homework set defined in the following article. Note that this code is missing some informaton and will not run without following the directions in the homework set.
 
-> KE Dray, KS Dreyer, JB Lucks, JN Leonard\*. Teaching rigorous, reproducible model development using synthetic biology. Chemical Engineering Education. In progress. \*corresponding authorship.
+> KE Dray, KS Dreyer, JB Lucks, JN Leonard\*. Teaching Systematic, Reproducible Model Development Using Synthetic Biology. Chemical Engineering Education. E-pub head of press. https://doi.org/10.18260/2-1-370.660-132665 \*corresponding authorship.
 
 
 
