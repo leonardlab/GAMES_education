@@ -61,7 +61,7 @@ Python 3.10 is required.
 1. To clone the repository, navigate to the location on your computer where you would like this repository stored and run the following command:
 
 ```bash
-$ git clone https://github.com/leonardlab/GAMES.git
+$ git clone https://github.com/leonardlab/GAMES_Education.git
 ```
 
 2. This repository uses Poetry for packaging and dependency management. The user can create a virtual environment using poetry that includes all necessary packages and dependencies based on the pyproject.toml file. See the Python project tools - getting started section for more information.
